@@ -6,9 +6,9 @@
 
 ## Autor
 
-Nom: [Escriu el teu nom aquí]
+Nom: Pau Guerrero Bossy
 
-Formant grups de treball: [Escriu els noms dels membres del grup aquí]
+Formant grups de treball: Vicenç Obiol
 
 ## Descripció del projecte
 

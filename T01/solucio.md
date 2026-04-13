@@ -68,6 +68,7 @@ Solucions tecnològiques per a municipis i administracions públiques orientades
 **Mida:** PIME.
 
 
+![](img/1.png)
 
 
 ## Radiografia de departaments

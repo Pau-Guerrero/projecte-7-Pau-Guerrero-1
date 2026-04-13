@@ -34,14 +34,6 @@ El projecte s’ha desenvolupat en local i s’ha publicat utilitzant **GitHub P
 🔗 **Repositori GitHub:**  
 https://github.com/Pau-Guerrero/web-corporativa2
 
----
-
-### URL de la pàgina web
-
-🌐 **Web publicada amb GitHub Pages:**  
-https://pau-guerrero.github.io/web-corporativa2/
-
----
 
 ### Analítica web (StatCounter)
 

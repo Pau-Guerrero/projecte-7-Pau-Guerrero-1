@@ -75,8 +75,6 @@ He creat la carpeta Public perquè sigui accessible per a tots els usuaris.
 Això permet que tots els usuaris puguin treballar amb els fitxers sense tenir control total.
 
 ![](img/4.png)
-![](img/6.png)
-![](img/7.png)
 ![](img/8.png)
 
 ---
@@ -94,7 +92,9 @@ Aquesta carpeta està destinada exclusivament al departament de Transport.
 
 Amb aquesta configuració, només els usuaris del grup Transport poden veure i accedir a la carpeta.
 
-![](img/9.png)
+![](img/6.png)
+![](img/7.png)
+![](img/18.png)
 
 ---
 
@@ -111,6 +111,10 @@ Aquesta carpeta conté informació confidencial del departament de direcció.
 D’aquesta manera, la carpeta només és visible i accessible per les persones autoritzades.
 
 ![](img/10.png)
+![](img/19.png)
+![](img/20.png)
+![](img/21.png)
+![](img/22.png)
 
 ---
 

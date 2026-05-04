@@ -15,7 +15,7 @@ Partiendo de la web creada en **T02**, esta tarea consiste en **actualizar la la
 ## Entrega
 En este README se incluye el enlace a la web publicada en **GitHub Pages**.
 
-**Web (GitHub Pages):** https://TU_USUARIO.github.io/TU_REPO/
+**Web (GitHub Pages):** https://pau-guerrero.github.io/web-corporativa2/
 
 ---
 

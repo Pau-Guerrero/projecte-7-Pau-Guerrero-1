@@ -464,7 +464,7 @@ Som dos: **Pau** i **Vicenç**. Per organitzar-nos, repartim així:
 
 Totes les parts importants es revisen entre els dos per evitar errors i retards.
 
-
+![](img/10.png)
 
 ## 7. Conclusions
 

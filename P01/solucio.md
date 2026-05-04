@@ -10,6 +10,14 @@ La proposta té quatre parts:
 4. Fer una web nova que compleixi la normativa.
 
 ---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # 2. Anàlisi de necessitats del client
 
@@ -76,6 +84,15 @@ La web actual no dona una imatge prou professional i no compleix del tot la norm
 | Falta d’hàbits de seguretat | Formació i normes simples per evitar errors amb dades personals | **Mitjana-alta** |
 | Web antiga i amb mancances legals | Landing nova amb formulari i textos legals, i gestió correcta de cookies i privacitat | **Alta** |
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # 3. Solució proposta
 
@@ -462,7 +479,14 @@ img { max-width: 100%; height: auto; display: block; }
 - Repositori: https://github.com/vicenc18/web-corporativa
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 4. Arquitectura i disseny tècnic
 
@@ -536,6 +560,14 @@ Això és important perquè el formulari tracta **dades personals** i el banner 
 ![](img/4.png)
 ![](img/5.png)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 5. PRESSUPOST
 
@@ -620,7 +652,14 @@ El cost recurrent anual és de **7.854,99 €** (sense IVA).
 | Cost mensual recurrent | 654,58 € |
 | Cost anual recurrent | 7.854,99 € |
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 6 Planificació projecte
 
@@ -681,6 +720,15 @@ Som dos: **Pau** i **Vicenç**. Per organitzar-nos, repartim així:
 Totes les parts importants es revisen entre els dos per evitar errors i retards.
 
 ![](img/10.png)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 7. Conclusions
 

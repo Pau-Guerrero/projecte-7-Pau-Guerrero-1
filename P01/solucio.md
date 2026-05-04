@@ -154,6 +154,12 @@ El que hem muntat **millora molt l’ordre** i **redueix problemes**, però per 
 
 ### Diagrama simple del funcionament
 ![](img/6.png)
+![](img/11.png)
+![](img/20.png)
+![](img/22.png)
+![](img/30.png)
+![](img/31.png)
+![](img/32.png)
 
 
 ## 3.2 Núvol i mail
@@ -177,6 +183,10 @@ En cost, el preu oficial del pla és **10,80 € per usuari i mes** amb pagament
 Per **35 usuaris**, això són **4.536 € a l’any**.
 
 La migració del correu es planteja de manera que no es perdi informació: es copien els correus antics al nou sistema amb eines de migració, i es fa el canvi en un moment controlat per evitar aturar la feina.
+
+![](img/34.png)
+![](img/35.png)
+![](img/36.png)
 
 ---
 
@@ -208,6 +218,8 @@ Per veure-ho clar, aquí tens una taula amb “què fem” i “què evitem”:
 
 Amb tot això, el client redueix riscos i compleix millor la protecció de dades, perquè la seguretat passa a ser una rutina normal del dia a dia.
 
+![](img/37.png)
+![](img/38.png)
 
 ## 3.4 Web i presència
 
@@ -222,6 +234,210 @@ Com que a la web es poden recollir **dades personals** amb el formulari, també 
 - **Banner/avís de cookies** per acceptar o rebutjar
 
 Això evita problemes i dona confiança al client, perquè tot queda clar i ben explicat.
+
+Ara os posare una tros de codi de cada arxiu:
+
+#### index.html
+```bash
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLogics — Tecnologia Alimentària</title>
+    <meta name="description" content="FoodLogics: transformem la indústria alimentària amb tecnologia avançada, logística intel·ligent i anàlisi de dades.">
+
+    <!-- ✅ FIX: Preconnect a fonts abans que el navegador les demani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- ✅ FIX: CSS asíncron — no bloqueja el renderitzat inicial -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+```
+
+#### styles.css
+```bash
+:root {
+    --primary: #0C4B33;
+    --primary-dark: #082E1F;
+    --primary-light: #1A6B4A;
+    --accent: #E85D3A;
+    --accent-hover: #D44E2C;
+    --accent-light: #FF7F5C;
+    --gold: #D4A853;
+    --cream: #FBF5EB;
+    --white: #FFFFFF;
+    --dark: #0F1A17;
+    --dark-card: #162420;
+    --dark-border: #1E332D;
+    --text: #1F2937;
+    /* ✅ MILLORA: Contrast #4B5563 sobre blanc = 7.1:1 (abans 4.54:1) */
+    --text-light: #4B5563;
+    /* ✅ MILLORA: Contrast #64748B sobre blanc = 5.48:1 (abans 2.85:1) */
+    --text-lighter: #64748B;
+    --text-on-dark: #E5E7EB;
+    --text-on-dark-light: #9CA3AF;
+    --border: #E8E0D4;
+    --border-light: #F0EBE3;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --section-padding: 100px 0;
+    --container-max: 1200px;
+    --container-padding: 0 24px;
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.35s ease;
+    --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+    --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--text); background-color: var(--white); overflow-x: hidden; }
+body.no-scroll { overflow: hidden; }
+img { max-width: 100%; height: auto; display: block; }
+```
+
+
+#### avis-legal.html
+```bash
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avís Legal — FoodLogics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar navbar-scrolled" id="navbar">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo"><svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E85D3A"/><path d="M14 28C14 28 14 18 20 12C26 18 26 28 26 28" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="20" y1="12" x2="20" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="10" r="2" fill="white"/></svg><span class="logo-text">Food<span class="logo-accent">Logics</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#inici" class="nav-link">Inici</a></li>
+                <li><a href="index.html#serveis" class="nav-link">Serveis</a></li>
+                <li><a href="index.html#nosaltres" class="nav-link">Sobre nosaltres</a></li>
+                <li><a href="index.html#contacte" class="nav-link">Contacte</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Obrir menú"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+
+            <nav class="legal-breadcrumb" aria-label="Ruta de navegació">
+                <a href="index.html">Inici</a>
+                <span class="separator">/</span>
+                <span>Avís legal</span>
+            </nav>
+
+```
+
+
+
+#### politica-cookies.html
+```bash
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies — FoodLogics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar navbar-scrolled" id="navbar">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo"><svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E85D3A"/><path d="M14 28C14 28 14 18 20 12C26 18 26 28 26 28" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="20" y1="12" x2="20" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="10" r="2" fill="white"/></svg><span class="logo-text">Food<span class="logo-accent">Logics</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#inici" class="nav-link">Inici</a></li>
+                <li><a href="index.html#serveis" class="nav-link">Serveis</a></li>
+                <li><a href="index.html#nosaltres" class="nav-link">Sobre nosaltres</a></li>
+                <li><a href="index.html#contacte" class="nav-link">Contacte</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Obrir menú"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+
+            <nav class="legal-breadcrumb" aria-label="Ruta de navegació">
+                <a href="index.html">Inici</a>
+                <span class="separator">/</span>
+                <span>Política de cookies</span>
+            </nav>
+```
+
+
+#### politica-privacitat.html
+```bash
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacitat — FoodLogics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar navbar-scrolled" id="navbar">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo"><svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E85D3A"/><path d="M14 28C14 28 14 18 20 12C26 18 26 28 26 28" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="20" y1="12" x2="20" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="10" r="2" fill="white"/></svg><span class="logo-text">Food<span class="logo-accent">Logics</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#inici" class="nav-link">Inici</a></li>
+                <li><a href="index.html#serveis" class="nav-link">Serveis</a></li>
+                <li><a href="index.html#nosaltres" class="nav-link">Sobre nosaltres</a></li>
+                <li><a href="index.html#contacte" class="nav-link">Contacte</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Obrir menú"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+
+            <nav class="legal-breadcrumb" aria-label="Ruta de navegació">
+                <a href="index.html">Inici</a>
+                <span class="separator">/</span>
+                <span>Política de privacitat</span>
+            </nav>
+
+            <div class="legal-header">
+                <h1>Política de Privacitat</h1>
+                <div class="legal-line"></div>
+                <p class="legal-updated">Darrera actualització: gener 2025</p>
+            </div>
+```
+
 
 ### Resum del que ha de tenir la web
 

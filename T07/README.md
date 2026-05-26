@@ -1,5 +1,7 @@
 # README — Propuesta de Correo Corporativo (FoodLogistic) · Estudio de Mercado + Dossier Técnico/Comercial
 
+**Enllaç:** https://www.canva.com/design/DAHG8o-yZ6c/AQc6UysLIkwE_qyvnEO3-w/edit
+
 ## 📌 Introducción al caso
 FoodLogistic necesita modernizar su **comunicación y colaboración online** además de actualizar su infraestructura.  
 Con una plantilla de **35 trabajadores**, quiere sustituir su **servidor de correo** (actualmente externalizado en un servicio de hosting) porque:

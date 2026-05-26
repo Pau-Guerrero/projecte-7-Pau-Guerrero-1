@@ -134,7 +134,7 @@ Es proposa **Microsoft 365 Empresa Estàndard** perquè combina:
 ---
 
 ## 4) Presentació final
-**Enllaç:** https://canva.link/rxyowfwtpq9arrw
+**Enllaç:** https://www.canva.com/design/DAHG8o-yZ6c/AQc6UysLIkwE_qyvnEO3-w/edit
 
 ---
 
